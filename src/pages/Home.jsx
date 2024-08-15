@@ -1,11 +1,13 @@
 import data from '../../articles.json'
-
+import { useState } from 'react';
 function Home() {
+    const [query, setQuery] = useState("")
     return ( 
         <>
             
             <div className='grid grid-cols-3 gap-4'>
-            {
+            { 
+                
                 data.map( (artigo, index) => (
                     <div className='card' key={index}>
                         <h2>{artigo.title}</h2>

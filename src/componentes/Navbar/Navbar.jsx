@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom'
-
 function Navbar() {
     return ( 
         <nav>
@@ -9,6 +8,7 @@ function Navbar() {
                 <li className="text-xl"><Link to ="sobre"> Sobre </Link></li>
             </ul>
         </nav>
+        //i hate bazingers
      );
 }
 
