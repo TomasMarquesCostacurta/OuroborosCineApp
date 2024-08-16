@@ -1,10 +1,10 @@
 import Navbar from "../Navbar/Navbar";
-
+import data from '../../../articles.json';
 function Header() {
     return ( 
         <header className="flex justify-around text-OutroVermeio bg-headercolor py-3.5">
-            <input type="text" id="buscar" placeholder='Buscar um filme' className="rounded-lg bg-Vermeiolegal text-OutroVermeio"/>{
-                Data.map((post, index) => {
+            {
+                data.map((post, index) => {
                     <div key={index}>
                       <p>{post.title}</p>
                       <p>{post.author}</p>
